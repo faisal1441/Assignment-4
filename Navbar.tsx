@@ -1,4 +1,3 @@
-import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 const Navbar = () => {
@@ -55,7 +54,12 @@ const Navbar = () => {
 
 
           <div className="w-[577px] h-6 ml-[60px] font-normal flex items-center border border-gray-300 rounded-3xl m-2 overflow-hidden gap-3">
-          <img src="/Frame (3).png" alt="Search" className="h-5 w-5  pl-1 ml-13" />
+          <Image 
+                src="/Frame (3).png" 
+                alt="Search"
+                width={20} 
+                height={20} 
+                className="h-5 w-5  pl-1 ml-13" />
           <input type="text"placeholder="Search for products..."className=" spx-4 py-2 w-96 focus:outline-none"        />
           <button className="px-4 bg-gray-100 hover:bg-gray-200">
             
